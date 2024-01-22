@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit&family=Lemon&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tektur&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-image: url(../img/weather.png);
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+header h1 {
+  color: white;
+  font-size: 65px;
+  font-family: "Kanit";
+  margin-top: 4%;
+}
+header .inputs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  width: 60%;
+  font-family: "Tektur";
+  margin-top: 10px;
+}
+header .inputs ::-moz-placeholder {
+  text-align: center;
+  font-family: "Tektur";
+}
+header .inputs input[type=text], header .inputs ::placeholder {
+  text-align: center;
+  font-family: "Tektur";
+}
+header .inputs #inputCity {
+  width: 80%;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+}
+header .inputs #submitBtn {
+  width: 25%;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  font-family: "Tektur";
+}
+header .inputs #submitBtn:hover {
+  background-color: #C0E2F4;
+  color: black;
+}
+header .inputs #clearBtn {
+  width: 25%;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  font-family: "Tektur";
+}
+header .inputs #clearBtn:hover {
+  background-color: #C0E2F4;
+  color: black;
+}
+
+main {
+  background-color: #F5F5F5;
+  display: flex;
+  flex-direction: column-reverse;
+  text-align: center;
+  justify-content: center;
+}
+main .container {
+  background-color: rgba(85, 117, 147, 0.5);
+  border-radius: 10px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+main .container .divTitle {
+  text-align: center;
+  font-family: "Tektur";
+  margin-top: 1%;
+  color: #F5F5F5;
+  font-weight: bold;
+  font-size: 20px;
+}
+main .container .divContent {
+  display: flex;
+}
+main .container .divContent .div_days {
+  background-color: #F6FCFF;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  width: 13%;
+  font-family: "Tektur";
+}
+main .container .divContent .div_days .div_logo {
+  width: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+main .container .divContent .div_days .div_temperature {
+  font-size: 25px;
+}/*# sourceMappingURL=style.css.map */
